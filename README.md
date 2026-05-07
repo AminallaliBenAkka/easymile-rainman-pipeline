@@ -1,9 +1,9 @@
 # easymile-rainman-pipeline
 Automated LiDAR aging and weather impact characterization pipeline (ROS/Python) for predictive maintenance on autonomous vehicles.
 
-# Rainman LiDAR Pipeline - Maintenance Prédictive
+# 🌧️ Rainman LiDAR Pipeline - Maintenance Prédictive
 
-## Description
+## 📖 Description
 Ce projet contient le pipeline d'acquisition automatisé et d'analyse algorithmique développé au sein d'**EasyMile** pour caractériser le vieillissement des capteurs LiDAR en conditions réelles d'exploitation. 
 
 L'objectif est d'étudier l'impact de l'usure mécanique et des conditions météorologiques (pluie, diffusion de Mie) sur la perception 3D, afin d'initier une stratégie de **maintenance prédictive** pour les véhicules autonomes (architecture Gen3).
@@ -12,6 +12,7 @@ L'objectif est d'étudier l'impact de l'usure mécanique et des conditions mét�
 
 Le dépôt est structuré de la manière suivante :
 
+```text
 📦 easymile-rainman-pipeline
  ┣ 📂 analysis/                 # Scripts d'analyse algorithmique (Python/ROS)
  ┃ ┣ 📜 ads_searchbox_process.py  # Extraction des métriques (P95, Bruit, ROS Transform)
@@ -26,7 +27,7 @@ Le dépôt est structuré de la manière suivante :
  ┣ 📜 ads_record_once.sh        # Script Bash d'acquisition (ROS bag & Météo)
  ┣ 📜 ads-record.service        # Service Systemd pour l'exécution en arrière-plan
  ┗ 📜 ads-record.timer          # Timer Systemd pour l'automatisation bi-quotidienne
-
+```
 # Fonctionnement du Pipeline
 
 Le système repose sur deux piliers principaux :
