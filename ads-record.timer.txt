@@ -1,0 +1,12 @@
+[Unit]
+Description=ADS - Scheduled recording at 00:00 and 12:00 (PARIS, pas UTC)
+
+[Timer]
+OnCalendar=*-*-* 23:00:00
+OnCalendar=*-*-* 11:00:00
+Persistent=true
+Unit=ads-record.service
+
+[Install]
+WantedBy=timers.target
+

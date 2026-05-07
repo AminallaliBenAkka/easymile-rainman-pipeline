@@ -1,0 +1,29 @@
+frame: vehicle
+margin_m: 0.50
+
+targets:
+  # Flat Target 1m² ~24m, légèrement à droite, z=3m
+  T_flat_24m:
+    type: flat_1m2
+    center: {x: 24.0, y: -1.00, z: 3.00}
+    size:   {dx: 1.00, dy: 1.00, dz: 1.00}
+    expected_distance: 24.0
+
+  # Cylindres ~7.50m, surélevés ~10cm
+  T_cyl_5cm_61cm:
+    type: cylinder
+    center: {x: 7.50, y: -0.60, z: 0.405}   # 0.10 + 0.61/2
+    size:   {dx: 0.40, dy: 0.40, dz: 0.61}
+    expected_distance: 7.50
+
+  T_cyl_20cm_21cm:
+    type: cylinder
+    center: {x: 7.50, y: -1.23, z: 0.205}   # 0.10 + 0.21/2
+    size:   {dx: 0.50, dy: 0.50, dz: 0.21}
+    expected_distance: 7.50
+
+  T_cyl_7cm_61cm:
+    type: cylinder
+    center: {x: 7.50, y: -1.85, z: 0.405}
+    size:   {dx: 0.40, dy: 0.40, dz: 0.61}
+    expected_distance: 7.50

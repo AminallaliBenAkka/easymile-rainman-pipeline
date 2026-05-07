@@ -1,0 +1,51 @@
+{
+  "record_id": "ADS_20260320_110002",
+  "timestamp_utc": "2026-03-20T11:03:10.016436+00:00",
+  "status": "ok",
+  "ads_label": "ADS clear",
+  "ads_condition": "clear",
+  "rainman_weather": "No Precipitation",
+  "rainman_weather_id": 10,
+  "rainman_weather_distribution": {
+    "No Precipitation": 100
+  },
+  "rainman_weather_dominant": "No Precipitation",
+  "bag": {
+    "ads_name": "ADS_20260320_110002",
+    "original_name": "debug_negative_rain_r-1-0_v7500.RAINMAN00001.2026-03-20.11-00-42.54.bag",
+    "path": "/navigator/logs/record/ads_ADS_20260320_110002__debug_negative_rain_r-1-0_v7500.RAINMAN00001.2026-03-20.11-00-42.54.bag"
+  },
+  "weather_begin": {
+    "visibility_m": 7500.0,
+    "rain_intensity_mmph": 0.0,
+    "temperature_c": 18.2,
+    "dew_point_c": 2.7,
+    "humidity_percent": 36.0,
+    "humidity_raw_percent": 35.9,
+    "wind_mean_speed_10min_ms": 3.2,
+    "wind_mean_dir_10min_deg": 150.0,
+    "wind_max_speed_10min_ms": 7.8,
+    "wind_max_dir_10min_deg": 160.0,
+    "rain_over_1min_mm": 5.1,
+    "rain_over_24h_mm": null,
+    "snow_particles": 0.0,
+    "hail_particles": 0.0,
+    "condition": "clear"
+  },
+  "bag_topics_total": 16107,
+  "bag_checker_selected_row": {
+    "Bag File": "debug_negative_rain_r-1-0_v7500.RAINMAN00001.2026-03-20.11-00-42.54.bag",
+    "/camera_front/image/": 321,
+    "airy_front": 1180,
+    "mrs_bot/raw": 1322,
+    "mrs_top/raw": 1330,
+    "multiscan165s_bot": 2408,
+    "multiscan165s_top": 2398,
+    "ods_front/raw": 3060,
+    "ot128_front/raw": 1200,
+    "qt128_front/raw": 1200,
+    "vlp32_front/raw": 1688
+  },
+  "bag_checker_raw": "Filtering to the last 1 bags...\n\nBag File                                                                | /camera_front/image/ | airy_front           | mrs_bot/raw          | mrs_top/raw          | multiscan165s_bot    | multiscan165s_top    | ods_front/raw        | ot128_front/raw      | qt128_front/raw      | vlp32_front/raw     \n-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\ndebug_negative_rain_r-1-0_v7500.RAINMAN00001.2026-03-20.11-00-42.54.bag | 321                  | 1180                 | 1322                 | 1330                 | 2408                 | 2398                 | 3060                 | 1200                 | 1200                 | 1688                ",
+  "active_record_requests_snippet": "requests: []\n---"
+}

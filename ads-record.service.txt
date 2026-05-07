@@ -1,0 +1,18 @@
+[Unit]
+Description=ADS - Record once (scheduled)
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/navigator
+
+# Important: ne PAS exécuter le script directement (noexec possible sur /navigator)
+ExecStart=/usr/bin/bash -lc 'source /etc/profile.d/90-rainman.sh >/dev/null 2>&1 || true; source /navigator/sensorslab/sensorslab.sh >/dev/null 2>&1 || true; exec /usr/bin/bash /navigator/sensorslab/resources-runtime/ads/ads_record_once.sh'
+
+# Evite que ça reste bloqué trop longtemps si aucun bag n’est créé/détecté
+TimeoutStartSec=12min
+
+# Logs persistants (pratique car journald rotaté)
+StandardOutput=append:/navigator/logs/ads/ads-record.log
+StandardError=append:/navigator/logs/ads/ads-record.log
+
